@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: lightblue;
 }
 
 .logo {
@@ -39,4 +40,16 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Custom  */
+.hello-text {
+  font-size: 3em;
+}
+h1 {
+  color: blue;
+}
+
+p {
+  font-size: 20px;
 }
