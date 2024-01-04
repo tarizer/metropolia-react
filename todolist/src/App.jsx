@@ -7,8 +7,15 @@ function App() {
     description: "",
     date: "",
   };
+  const todosInit = [
+    // Example initial list of todos
+    { id: 1, description: "Buy groceries", date: "2024-01-01" },
+    { id: 2, description: "Do laundry", date: "2024-01-02" },
+    { id: 3, description: "Clean the house", date: "2024-01-03" },
+  ];
+
   const [todo, setTodo] = useState(todoInit);
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(todosInit);
 
   const onChangeHandle = (e) => {
     setTodo({
