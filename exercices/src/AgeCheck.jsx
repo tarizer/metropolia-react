@@ -1,7 +1,5 @@
-import "./App.css";
-
 function AgeCheck() {
-  const onSubmitHandle = (e) => {
+  const onSubmitHandler = (e) => {
     e.preventDefault();
 
     const name = e.target.elements.name.value;
@@ -12,7 +10,7 @@ function AgeCheck() {
   };
   return (
     <>
-      <form onSubmit={onSubmitHandle}>
+      <form onSubmit={onSubmitHandler}>
         <input type="text" placeholder="Name" name="name" />
         <input type="number" placeholder="Age" name="age" />
         <button type="submit">Check age</button>
