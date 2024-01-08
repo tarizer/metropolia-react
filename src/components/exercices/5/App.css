@@ -1,0 +1,13 @@
+.userRegistration {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.calculator {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+td {
+  padding: 0.25rem 1rem;
+}
