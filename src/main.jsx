@@ -15,6 +15,7 @@ import AgeCheck from "./components/exercices/5/AgeCheck.jsx";
 import Calculator from "./components/exercices/5/Calculator.jsx";
 import UserRegistration from "./components/exercices/5/UserRegistration.jsx";
 import ChangeColor from "./components/exercices/4/ChangeColor.jsx";
+import Home from "./components/Home.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,8 +25,8 @@ const router = createBrowserRouter([
     children: [
       {
         // path: "contacts/:contactId",
-        path: "contact",
-        element: <Contact />,
+        path: "/",
+        element: <Home />,
       },
       {
         path: "course/multiple-imput",
