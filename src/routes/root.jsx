@@ -4,8 +4,16 @@ export default function Root() {
   return (
     <>
       <div id="sidebar">
-        <h1>React Fundamentals</h1>
-        <div>Metropolia</div>
+        <h1>
+          <Link className="link" to={`/`}>
+            React Fundamentals
+          </Link>
+        </h1>
+        <div>
+          <Link className="link" to={`/`}>
+            Metropolia
+          </Link>
+        </div>
         <nav>
           <h4>4. Props & State</h4>
           <ul>

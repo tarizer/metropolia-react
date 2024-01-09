@@ -2,14 +2,8 @@ function Home() {
   return (
     <>
       <h1>Metropolia: React.js fundamentals 3 ECTS</h1>
-      <h2>Course description</h2>
-      <h3>Objective</h3>
-      <p>
-        After completing the course, student has ability to build a simple
-        React.js based application.
-      </p>
-      <h3>Content</h3>
-      <ul>
+
+      <ol>
         <li>Javascript ES6</li>
         <li>React introduction</li>
         <li>React Components</li>
@@ -21,7 +15,7 @@ function Home() {
         <li>Material-UI library</li>
         <li>React & Firebase</li>
         <li>Testing & Deployment</li>
-      </ul>
+      </ol>
     </>
   );
 }
