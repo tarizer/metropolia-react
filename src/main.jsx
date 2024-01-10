@@ -6,7 +6,6 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/root.jsx";
 import ErrorPage from "./error-page.jsx";
-import Contact from "./routes/contact.jsx";
 import MultipleInput from "./components/course/5/MultipleInput.jsx";
 import TodoList from "./components/course/5/TodoList.jsx";
 import Counter from "./components/exercices/4/Counter.jsx";
@@ -16,6 +15,8 @@ import Calculator from "./components/exercices/5/Calculator.jsx";
 import UserRegistration from "./components/exercices/5/UserRegistration.jsx";
 import ChangeColor from "./components/exercices/4/ChangeColor.jsx";
 import Home from "./components/Home.jsx";
+import { Nasa } from "./components/course/6/Nasa.jsx";
+import { Userlist } from "./components/course/6/Userlist.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,6 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        // path: "contacts/:contactId",
         path: "/",
         element: <Home />,
       },
@@ -59,6 +59,10 @@ const router = createBrowserRouter([
       {
         path: "exercices/user-registration",
         element: <UserRegistration />,
+      },
+      {
+        path: "course/nasa",
+        element: <Nasa />,
       },
     ],
   },
