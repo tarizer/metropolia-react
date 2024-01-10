@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-function UserRegistration() {
+export function UserRegistration() {
   const initialState = {
     firstname: "",
     lastname: "",
@@ -59,5 +59,3 @@ function UserRegistration() {
     </>
   );
 }
-
-export default UserRegistration;

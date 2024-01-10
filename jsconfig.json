@@ -1,0 +1,15 @@
+// Add compilerOptions
+{
+  "compilerOptions": {
+    // Does not work with vite
+    // Config should be done in vite.config.js
+    // "baseUrl": ".",
+    // "paths": {
+    //   "@/*": ["src/*"],
+    //   "@components/*": ["src/components/*"],
+    //   "@course/*": ["src/components/course/*"],
+    //   "@exercices/*": ["src/components/exercices/*"]
+    // }
+  },
+  "include": ["src"]
+}

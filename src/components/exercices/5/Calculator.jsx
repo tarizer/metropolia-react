@@ -1,7 +1,7 @@
 import { useState } from "react";
 // import "./App.css";
 
-function Calculator() {
+export function Calculator() {
   const [number, setNumber] = useState({});
   const [result, setResult] = useState(0);
 
@@ -32,5 +32,3 @@ function Calculator() {
     </>
   );
 }
-
-export default Calculator;

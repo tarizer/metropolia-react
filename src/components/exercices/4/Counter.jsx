@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-function Counter() {
+export function Counter() {
   const [count, setCount] = useState(0);
 
   const incrementCounter = () => {
@@ -27,5 +27,3 @@ function Counter() {
     </>
   );
 }
-
-export default Counter;

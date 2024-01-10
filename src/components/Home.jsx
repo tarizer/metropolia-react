@@ -1,4 +1,4 @@
-function Home() {
+export function Home() {
   return (
     <>
       <h1>Metropolia: React.js fundamentals 3 ECTS</h1>
@@ -19,5 +19,3 @@ function Home() {
     </>
   );
 }
-
-export default Home;

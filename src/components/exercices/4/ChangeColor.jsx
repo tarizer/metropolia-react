@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ChangeColor = () => {
+export const ChangeColor = () => {
   const [color, setColor] = useState("black");
   const handleClick = () => {
     color === "black" ? setColor("red") : setColor("black");
@@ -13,5 +13,3 @@ const ChangeColor = () => {
     </>
   );
 };
-
-export default ChangeColor;

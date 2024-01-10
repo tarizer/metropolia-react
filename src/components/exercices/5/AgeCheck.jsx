@@ -1,4 +1,4 @@
-function AgeCheck() {
+export function AgeCheck() {
   const onSubmitHandler = (e) => {
     e.preventDefault();
 
@@ -19,5 +19,3 @@ function AgeCheck() {
     </>
   );
 }
-
-export default AgeCheck;

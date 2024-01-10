@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-function MultipleInput() {
+export function MultipleInput() {
   const personInit = {
     firstname: "",
     lastname: "",
@@ -53,5 +53,3 @@ function MultipleInput() {
     </>
   );
 }
-
-export default MultipleInput;

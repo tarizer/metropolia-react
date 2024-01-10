@@ -4,19 +4,20 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "./routes/root.jsx";
-import ErrorPage from "./error-page.jsx";
-import MultipleInput from "./components/course/5/MultipleInput.jsx";
-import TodoList from "./components/course/5/TodoList.jsx";
-import Counter from "./components/exercices/4/Counter.jsx";
-import Message from "./components/exercices/4/Message.jsx";
-import AgeCheck from "./components/exercices/5/AgeCheck.jsx";
-import Calculator from "./components/exercices/5/Calculator.jsx";
-import UserRegistration from "./components/exercices/5/UserRegistration.jsx";
-import ChangeColor from "./components/exercices/4/ChangeColor.jsx";
-import Home from "./components/Home.jsx";
-import { Nasa } from "./components/course/6/Nasa.jsx";
-import { Userlist } from "./components/course/6/Userlist.jsx";
+import { Root } from "./routes/root.jsx";
+import { ErrorPage } from "./error-page.jsx";
+import { MultipleInput } from "@course/5/MultipleInput.jsx";
+import { TodoList } from "@course/5/TodoList.jsx";
+
+import { Counter } from "@exercices/4/Counter.jsx";
+import { Message } from "@exercices/4/Message.jsx";
+import { AgeCheck } from "@exercices/5/AgeCheck.jsx";
+import { Calculator } from "@exercices/5/Calculator.jsx";
+import { UserRegistration } from "@exercices/5/UserRegistration.jsx";
+import { ChangeColor } from "@exercices/4/ChangeColor.jsx";
+import { Home } from "./components/Home.jsx";
+import { Nasa } from "@course/6/Nasa.jsx";
+import { Userlist } from "@course/6/Userlist.jsx";
 
 const router = createBrowserRouter([
   {

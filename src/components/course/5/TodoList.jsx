@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import TodoTable from "./TodoTable";
 
-function TodoList() {
+export function TodoList() {
   const todoInit = {
     description: "",
     date: "",
@@ -69,5 +69,3 @@ function TodoList() {
     </>
   );
 }
-
-export default TodoList;
