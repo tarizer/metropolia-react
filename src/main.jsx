@@ -6,18 +6,20 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Root } from "./routes/root.jsx";
 import { ErrorPage } from "./error-page.jsx";
+
+import { Home } from "@components/Home.jsx";
 import { MultipleInput } from "@course/5/MultipleInput.jsx";
 import { TodoList } from "@course/5/TodoList.jsx";
+import { Nasa } from "@course/6/Nasa.jsx";
+import { UserList } from "@course/6/Userlist.jsx";
 
 import { Counter } from "@exercices/4/Counter.jsx";
 import { Message } from "@exercices/4/Message.jsx";
+import { ChangeColor } from "@exercices/4/ChangeColor.jsx";
 import { AgeCheck } from "@exercices/5/AgeCheck.jsx";
 import { Calculator } from "@exercices/5/Calculator.jsx";
 import { UserRegistration } from "@exercices/5/UserRegistration.jsx";
-import { ChangeColor } from "@exercices/4/ChangeColor.jsx";
-import { Home } from "./components/Home.jsx";
-import { Nasa } from "@course/6/Nasa.jsx";
-import { Userlist } from "@course/6/Userlist.jsx";
+import { UserInfo } from "./components/course/6/UserInfo";
 
 const router = createBrowserRouter([
   {
@@ -64,6 +66,14 @@ const router = createBrowserRouter([
       {
         path: "course/nasa",
         element: <Nasa />,
+      },
+      {
+        path: "course/user-list",
+        element: <UserList />,
+      },
+      {
+        path: "course/user-info",
+        element: <UserInfo />,
       },
     ],
   },

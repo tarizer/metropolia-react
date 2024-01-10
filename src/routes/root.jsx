@@ -66,6 +66,9 @@ export function Root() {
               <li>
                 <Link to={`/course/user-list`}>Userlist</Link>
               </li>
+              <li>
+                <Link to={`/course/user-info`}>Userinfo</Link>
+              </li>
             </ul>
           </details>
         </nav>
