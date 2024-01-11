@@ -20,25 +20,26 @@ export const Github = () => {
       <h1>Github React Repositories</h1>
 
       {isLoading && "Loading..."}
-
-      <table>
-        <thead style={{ fontWeight: "700" }}>
-          <tr>
-            <td>Name</td>
-            <td>Url</td>
-          </tr>
-        </thead>
-        <tbody>
-          {repositories.map((repository) => (
-            <tr key={repository.id}>
-              <td>{repository.full_name}</td>
-              <td>
-                <a href={repository.html_url}>{repository.html_url}</a>
-              </td>
+      {!!repositories?.length && (
+        <table>
+          <thead style={{ fontWeight: "700" }}>
+            <tr>
+              <td>Name</td>
+              <td>Url</td>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {repositories.map((repository) => (
+              <tr key={repository.id}>
+                <td>{repository.full_name}</td>
+                <td>
+                  <a href={repository.html_url}>{repository.html_url}</a>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
     </>
   );
 };
