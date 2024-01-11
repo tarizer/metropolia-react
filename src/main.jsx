@@ -22,6 +22,7 @@ import { UserRegistration } from "@exercices/5/UserRegistration.jsx";
 import { UserInfo } from "./components/course/6/UserInfo";
 import { Trivia } from "./components/exercices/6/Trivia";
 import { Github } from "./components/exercices/6/Github";
+import { GithubSearch } from "./components/exercices/6/GithubSearch";
 
 const router = createBrowserRouter([
   {
@@ -84,6 +85,10 @@ const router = createBrowserRouter([
       {
         path: "course/github",
         element: <Github />,
+      },
+      {
+        path: "course/github-search",
+        element: <GithubSearch />,
       },
     ],
   },

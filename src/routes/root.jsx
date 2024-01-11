@@ -64,16 +64,19 @@ export function Root() {
                 <Link to={`/course/nasa`}>Nasa APOD</Link>
               </li>
               <li>
-                <Link to={`/course/user-list`}>Userlist</Link>
+                <Link to={`/course/user-list`}>User List</Link>
               </li>
               <li>
-                <Link to={`/course/user-info`}>Userinfo</Link>
+                <Link to={`/course/user-info`}>User Info</Link>
               </li>
               <li>
                 <Link to={`/course/trivia`}>Trivia</Link>
               </li>
               <li>
                 <Link to={`/course/github`}>Github</Link>
+              </li>
+              <li>
+                <Link to={`/course/github-search`}>Github Search</Link>
               </li>
             </ul>
           </details>
