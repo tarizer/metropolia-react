@@ -26,3 +26,4 @@ dist-ssr
 # Custom
 
 _archive
+src/components/exercices/6/UserListImage.jsx

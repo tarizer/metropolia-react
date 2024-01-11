@@ -20,6 +20,7 @@ import { AgeCheck } from "@exercices/5/AgeCheck.jsx";
 import { Calculator } from "@exercices/5/Calculator.jsx";
 import { UserRegistration } from "@exercices/5/UserRegistration.jsx";
 import { UserInfo } from "./components/course/6/UserInfo";
+import { Trivia } from "./components/exercices/6/Trivia";
 
 const router = createBrowserRouter([
   {
@@ -74,6 +75,10 @@ const router = createBrowserRouter([
       {
         path: "course/user-info",
         element: <UserInfo />,
+      },
+      {
+        path: "course/trivia",
+        element: <Trivia />,
       },
     ],
   },

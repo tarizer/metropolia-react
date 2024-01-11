@@ -41,8 +41,8 @@ export const UserInfo = () => {
       <p>
         {error
           ? "User not found"
-          : !Array.isArray(user) &&
-            `${user?.first_name} ${user.last_name} (${user.email})`}
+          : !Array.isArray(user) && // API returns an array if user is not found or if the user ID is not provided
+            `${user.first_name} ${user.last_name} (${user.email})`}
       </p>
     </>
   );
