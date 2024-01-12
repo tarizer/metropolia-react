@@ -2,8 +2,10 @@ import { useState } from "react";
 import { AgGridReact } from "ag-grid-react";
 import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-material.css";
+import { AwesomeButton } from "react-awesome-button";
+import "react-awesome-button/dist/styles.css";
 
-export const TodoGrid = () => {
+export const TodoGridEnhanced = () => {
   const todoInit = {
     description: "",
     date: "",
@@ -26,9 +28,14 @@ export const TodoGrid = () => {
 
   // Column definitions for ag-grid
   const columnDefs = [
-    { field: "description", sortable: true, filter: true },
-    { field: "date", sortable: true, filter: true },
-    { field: "status", sortable: true, filter: true },
+    {
+      field: "description",
+      sortable: true,
+      filter: true,
+      suppressMovable: true,
+    },
+    { field: "date", sortable: true, filter: true, suppressMovable: true },
+    { field: "status", sortable: true, filter: true, suppressMovable: true },
   ];
 
   const inputChanged = (event) => {
@@ -43,7 +50,7 @@ export const TodoGrid = () => {
 
   return (
     <>
-      <h1>Todo Grid</h1>
+      <h1>Todo Grid Enhanced</h1>
       <form onSubmit={onSubmitHandler} className="flex-row">
         <input
           placeholder="Description"
@@ -63,14 +70,19 @@ export const TodoGrid = () => {
           value={todo.status}
           onChange={inputChanged}
         />
-        <button type="submit">Add</button>
-        {/* <AwesomeButton type="whatsapp">Add</AwesomeButton> */}
+
+        {/* <button type="submit">Add</button> */}
+        <AwesomeButton type="whatsapp">Add</AwesomeButton>
       </form>
 
       <h2>Tasks</h2>
       <p>{todo.date}</p>
       <div className="ag-theme-material" style={{ height: 400, width: 600 }}>
-        <AgGridReact rowData={todos} columnDefs={columnDefs} />
+        <AgGridReact
+          rowData={todos}
+          columnDefs={columnDefs}
+          animateRows={true}
+        />
       </div>
     </>
   );

@@ -89,6 +89,11 @@ export function Root() {
               <li>
                 <Link to={`/course/todogrid`}>Todo Grid</Link>
               </li>
+              <li>
+                <Link to={`/exercices/todogrid-enhanced`}>
+                  Todo Grid Enhanced
+                </Link>
+              </li>
             </ul>
           </details>
         </nav>

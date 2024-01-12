@@ -24,6 +24,7 @@ import { Trivia } from "./components/exercices/6/Trivia";
 import { Github } from "./components/exercices/6/Github";
 import { GithubSearch } from "./components/exercices/6/GithubSearch";
 import { TodoGrid } from "./components/course/7/TodoGrid";
+import { TodoGridEnhanced } from "./components/exercices/7/TodoGridEnhanced";
 
 const router = createBrowserRouter([
   {
@@ -94,6 +95,10 @@ const router = createBrowserRouter([
       {
         path: "course/todogrid",
         element: <TodoGrid />,
+      },
+      {
+        path: "exercices/todogrid-enhanced",
+        element: <TodoGridEnhanced />,
       },
     ],
   },
