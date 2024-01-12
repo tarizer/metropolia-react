@@ -73,10 +73,21 @@ export function Root() {
                 <Link to={`/course/trivia`}>Trivia</Link>
               </li>
               <li>
-                <Link to={`/course/github`}>Github</Link>
+                <Link to={`/course/github`}>Github React Repositories</Link>
               </li>
               <li>
-                <Link to={`/course/github-search`}>Github Search</Link>
+                <Link to={`/course/github-search`}>
+                  Search Github Repositories
+                </Link>
+              </li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>7. 3rd Party Components</summary>
+            <ul>
+              <li>
+                <Link to={`/course/todogrid`}>Todo Grid</Link>
               </li>
             </ul>
           </details>

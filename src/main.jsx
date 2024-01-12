@@ -23,6 +23,7 @@ import { UserInfo } from "./components/course/6/UserInfo";
 import { Trivia } from "./components/exercices/6/Trivia";
 import { Github } from "./components/exercices/6/Github";
 import { GithubSearch } from "./components/exercices/6/GithubSearch";
+import { TodoGrid } from "./components/course/7/TodoGrid";
 
 const router = createBrowserRouter([
   {
@@ -89,6 +90,10 @@ const router = createBrowserRouter([
       {
         path: "course/github-search",
         element: <GithubSearch />,
+      },
+      {
+        path: "course/todogrid",
+        element: <TodoGrid />,
       },
     ],
   },
