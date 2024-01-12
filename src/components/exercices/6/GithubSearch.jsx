@@ -24,7 +24,7 @@ export const GithubSearch = () => {
 
   return (
     <>
-      <h1>Github React Repositories</h1>
+      <h1>Search Github Repositories</h1>
       <form
         onSubmit={onSubmitHandler}
         style={{ display: "flex", flexDirection: "row" }}
