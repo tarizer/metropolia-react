@@ -96,6 +96,15 @@ export function Root() {
               </li>
             </ul>
           </details>
+
+          <details>
+            <summary>8. React Router</summary>
+            <ul>
+              <li>
+                <Link to={`/exercices/todo-list-router`}>Todo List Router</Link>
+              </li>
+            </ul>
+          </details>
         </nav>
       </div>
       {/* <div id="detail"> */}

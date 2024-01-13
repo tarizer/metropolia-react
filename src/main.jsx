@@ -25,6 +25,10 @@ import { Github } from "./components/exercices/6/Github";
 import { GithubSearch } from "./components/exercices/6/GithubSearch";
 import { TodoGrid } from "./components/course/7/TodoGrid";
 import { TodoGridEnhanced } from "./components/exercices/7/TodoGridEnhanced";
+import { NotFound } from "./components/NotFound";
+import { TodoListApp } from "./components/exercices/8/TodoListApp";
+import { HomeRouter } from "./components/exercices/8/HomeRouter";
+import { TodoListRouter } from "./components/exercices/8/TodoListRouter";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +36,10 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
+      {
+        path: "*",
+        element: <NotFound />,
+      },
       {
         path: "/",
         element: <Home />,
@@ -99,6 +107,20 @@ const router = createBrowserRouter([
       {
         path: "exercices/todogrid-enhanced",
         element: <TodoGridEnhanced />,
+      },
+      {
+        path: "exercices/todo-list-router",
+        element: <TodoListApp />,
+        children: [
+          {
+            path: "home",
+            element: <HomeRouter />,
+          },
+          {
+            path: "app",
+            element: <TodoListRouter />,
+          },
+        ],
       },
     ],
   },
