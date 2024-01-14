@@ -29,6 +29,7 @@ import { NotFound } from "./components/NotFound";
 import { TodoListApp } from "./components/exercices/8/TodoListApp";
 import { HomeRouter } from "./components/exercices/8/HomeRouter";
 import { TodoListRouter } from "./components/exercices/8/TodoListRouter";
+import { MaterialTodo } from "./components/course/9/MaterialTodo";
 
 const router = createBrowserRouter([
   {
@@ -121,6 +122,10 @@ const router = createBrowserRouter([
             element: <TodoListRouter />,
           },
         ],
+      },
+      {
+        path: "course/material-todo",
+        element: <MaterialTodo />,
       },
     ],
   },
