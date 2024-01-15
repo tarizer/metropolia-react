@@ -1,5 +1,13 @@
 import { useState } from "react";
-
+import "./MaterialTodo.css";
+import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import DeleteIcon from "@mui/icons-material/Delete";
+import TextField from "@mui/material/TextField";
+import Stack from "@mui/material/Stack";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
 export const MaterialTodo = () => {
   const initialTodo = { description: "", date: "" };
   const [todo, setTodo] = useState(initialTodo);
@@ -21,9 +29,36 @@ export const MaterialTodo = () => {
 
   return (
     <>
-      <h1>Material Todo</h1>
-      <form onSubmit={addTodo}>
-        <input
+      {/* <h1>Material Todo</h1> */}
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6">Material Todolist</Typography>
+        </Toolbar>
+      </AppBar>
+      <Stack
+        direction="row"
+        spacing={2}
+        mt={2}
+        justifyContent="center"
+        alignItems="center"
+      >
+        <form onSubmit={addTodo}>
+          <TextField
+            variant="standard"
+            label="Description"
+            name="description"
+            value={todo.description}
+            onChange={inputChanged}
+          />
+          <TextField
+            variant="standard"
+            label="Date"
+            name="date"
+            value={todo.date}
+            onChange={inputChanged}
+          />
+
+          {/* <input
           placeholder="Description"
           name="description"
           value={todo.description}
@@ -34,9 +69,10 @@ export const MaterialTodo = () => {
           name="date"
           value={todo.date}
           onChange={inputChanged}
-        />
-        <button>Add</button>
-      </form>
+        /> */}
+          <Button type="submit">Add</Button>
+        </form>
+      </Stack>
       <table>
         <tbody>
           {todos.map((todo, index) => (
@@ -44,7 +80,14 @@ export const MaterialTodo = () => {
               <td>{todo.description}</td>
               <td>{todo.date}</td>
               <td>
-                <button onClick={() => deleteTodo(index)}>Delete</button>
+                <IconButton
+                  size="small"
+                  color="error"
+                  onClick={() => deleteTodo(index)}
+                >
+                  {" "}
+                  <DeleteIcon />
+                </IconButton>
               </td>
             </tr>
           ))}

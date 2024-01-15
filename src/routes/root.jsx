@@ -110,7 +110,7 @@ export function Root() {
             <summary>9. Material UI</summary>
             <ul>
               <li>
-                <Link to={`/course/material-todo`}>Todo List Router</Link>
+                <Link to={`/course/material-todo`}>Material Todolist</Link>
               </li>
             </ul>
           </details>
