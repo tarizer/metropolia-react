@@ -112,6 +112,11 @@ export function Root() {
               <li>
                 <Link to={`/course/material-todo`}>Material Todolist</Link>
               </li>
+              <li>
+                <Link to={`/course/material-todo-datagrid`}>
+                  Material Todolist (DataGrid)
+                </Link>
+              </li>
             </ul>
           </details>
         </nav>
