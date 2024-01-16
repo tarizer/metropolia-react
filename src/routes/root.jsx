@@ -113,9 +113,18 @@ export function Root() {
                 <Link to={`/course/material-todo`}>Material Todolist</Link>
               </li>
               <li>
-                <Link to={`/course/material-todo-datagrid`}>
+                <Link to={`/exercices/material-todo-datagrid`}>
                   Material Todolist (DataGrid)
                 </Link>
+              </li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>10. React & Firebase</summary>
+            <ul>
+              <li>
+                <Link to={`/course/firebase-todo`}>Firebase Todolist</Link>
               </li>
             </ul>
           </details>

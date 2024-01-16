@@ -31,6 +31,7 @@ import { HomeRouter } from "./components/exercices/8/HomeRouter";
 import { TodoListRouter } from "./components/exercices/8/TodoListRouter";
 import { MaterialTodo } from "./components/course/9/MaterialTodo";
 import { MaterialTodoDataGrid } from "./components/exercices/9/MaterialTodoDataGrid";
+import { FirebaseTodo } from "./components/course/10/FirebaseTodo";
 
 const router = createBrowserRouter([
   {
@@ -129,8 +130,12 @@ const router = createBrowserRouter([
         element: <MaterialTodo />,
       },
       {
-        path: "course/material-todo-datagrid",
+        path: "exercices/material-todo-datagrid",
         element: <MaterialTodoDataGrid />,
+      },
+      {
+        path: "course/firebase-todo",
+        element: <FirebaseTodo />,
       },
     ],
   },
