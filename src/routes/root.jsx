@@ -126,6 +126,9 @@ export function Root() {
               <li>
                 <Link to={`/course/firebase-todo`}>Firebase Todolist</Link>
               </li>
+              <li>
+                <Link to={`/exercices/bookstore`}>Firebase Bookstore</Link>
+              </li>
             </ul>
           </details>
         </nav>
