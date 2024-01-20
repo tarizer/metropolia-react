@@ -16,10 +16,13 @@ export const Bookstore = () => {
   const firebaseDB = import.meta.env.VITE_FIREBASE_BOOKSTORE;
 
   const [todos, setTodos] = useState([]);
+
   const columnDefs = [
-    { field: "description", sortable: true, filter: true },
-    { field: "date", sortable: true, filter: true },
-    { field: "priority", sortable: true, filter: true },
+    { field: "title", sortable: true, filter: true },
+    { field: "author", sortable: true, filter: true },
+    { field: "year", sortable: true, filter: true },
+    { field: "isbn", sortable: true, filter: true },
+    { field: "price", sortable: true, filter: true },
     {
       headerName: "",
       field: "id",
@@ -40,12 +43,16 @@ export const Bookstore = () => {
       .then((response) => response.json())
       .then((data) =>
         setTodos(
-          Object.entries(data).map(([id, { date, description, priority }]) => ({
-            id,
-            date,
-            description,
-            priority,
-          }))
+          Object.entries(data).map(
+            ([id, { title, author, year, isbn, price }]) => ({
+              id,
+              title,
+              author,
+              year,
+              isbn,
+              price,
+            })
+          )
         )
       )
       .catch((error) => console.log("Error: ", error));
@@ -74,13 +81,13 @@ export const Bookstore = () => {
 
   return (
     <>
-      <AppBar position="static" style={{ width: 700 }}>
+      <AppBar position="static" style={{ width: "90%" }}>
         <Toolbar>
           <Typography variant="h5">Firebase Bookstore</Typography>
         </Toolbar>
       </AppBar>
       <AddTodo addTodo={addTodo} />
-      <div className="ag-theme-material" style={{ height: 400, width: 700 }}>
+      <div className="ag-theme-material" style={{ height: 400, width: "90%" }}>
         <AgGridReact rowData={todos} columnDefs={columnDefs} />
       </div>
     </>

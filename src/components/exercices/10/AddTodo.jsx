@@ -7,7 +7,7 @@ import DialogTitle from "@mui/material/DialogTitle";
 import { useState } from "react";
 import PropTypes from "prop-types";
 export const AddTodo = ({ addTodo }) => {
-  const initialTodo = { description: "", date: "", priority: "" };
+  const initialTodo = { title: "", author: "", year: "", isbn: "", price: "" };
 
   const [open, setOpen] = useState(false);
   const [todo, setTodo] = useState(initialTodo);
@@ -38,31 +38,46 @@ export const AddTodo = ({ addTodo }) => {
       <Dialog open={open}>
         <DialogTitle>New todo</DialogTitle>
         <DialogContent>
-          {" "}
           <TextField
-            name="description"
-            value={todo.description}
+            name="title"
+            value={todo.title}
             onChange={inputChanged}
             margin="dense"
-            label="Description"
+            label="Title"
             fullWidth
           />
           <TextField
-            name="date"
-            value={todo.date}
+            name="author"
+            value={todo.author}
             onChange={inputChanged}
             margin="dense"
-            label="Date"
+            label="Author"
             fullWidth
           />
           <TextField
-            name="priority"
-            value={todo.priority}
+            name="year"
+            value={todo.year}
             onChange={inputChanged}
             margin="dense"
-            label="Priority"
+            label="Year"
             fullWidth
-          />{" "}
+          />
+          <TextField
+            name="isbn"
+            value={todo.isbn}
+            onChange={inputChanged}
+            margin="dense"
+            label="Isbn"
+            fullWidth
+          />
+          <TextField
+            name="price"
+            value={todo.price}
+            onChange={inputChanged}
+            margin="dense"
+            label="Price"
+            fullWidth
+          />
         </DialogContent>
         <DialogActions>
           <Button color="primary" onClick={handleClose}>
