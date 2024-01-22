@@ -131,6 +131,15 @@ export function Root() {
               </li>
             </ul>
           </details>
+
+          <details>
+            <summary>11. Testing & Deployment</summary>
+            <ul>
+              <li>
+                <Link to={`/course/testing`}>Testing</Link>
+              </li>
+            </ul>
+          </details>
         </nav>
       </div>
       {/* <div id="detail"> */}

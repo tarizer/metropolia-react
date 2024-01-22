@@ -33,6 +33,7 @@ import { MaterialTodo } from "./components/course/9/MaterialTodo";
 import { MaterialTodoDataGrid } from "./components/exercices/9/MaterialTodoDataGrid";
 import { FirebaseTodo } from "./components/course/10/FirebaseTodo";
 import { Bookstore } from "./components/exercices/10/Bookstore";
+import Testing from "./components/course/11/Testing";
 
 const router = createBrowserRouter([
   {
@@ -141,6 +142,10 @@ const router = createBrowserRouter([
       {
         path: "exercices/bookstore",
         element: <Bookstore />,
+      },
+      {
+        path: "course/testing",
+        element: <Testing />,
       },
     ],
   },
