@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./MaterialTodo.css";
 import Button from "@mui/material/Button";
 // import IconButton from "@mui/material/IconButton";
 // import DeleteIcon from "@mui/icons-material/Delete";
@@ -52,7 +51,7 @@ export const MaterialTodoDataGrid = () => {
         justifyContent="center"
         alignItems="center"
       >
-        <form onSubmit={addTodo}>
+        <form onSubmit={addTodo} className="inline-form clean-input">
           <TextField
             variant="standard"
             label="Description"

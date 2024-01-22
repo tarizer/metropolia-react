@@ -434,3 +434,15 @@ summary {
   display: flex;
   flex-direction: row;
 }
+
+.inline-form {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.clean-input input {
+  box-shadow: 0 0px;
+}
+.clean-input:hover {
+  box-shadow: 0 0px;
+}
