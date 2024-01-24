@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Testing() {
+export const Testing = () => {
   const [todo, setTodo] = useState({ description: "", date: "", status: "" });
   const [todos, setTodos] = useState([]);
 
@@ -51,4 +51,4 @@ export default function Testing() {
       </table>
     </>
   );
-}
+};
