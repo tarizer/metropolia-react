@@ -1,5 +1,6 @@
 {
   "name": "metropolia-react",
+  "homepage": "/metropolia-react",
   "private": true,
   "version": "0.1",
   "type": "module",
@@ -7,6 +8,7 @@
     "dev": "vite",
     "test": "vitest",
     "build": "vite build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

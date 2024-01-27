@@ -8,6 +8,7 @@ const __dirname = path.dirname(__filename);
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/metropolia-react/",
   plugins: [react()],
   test: {
     globals: true,

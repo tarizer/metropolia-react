@@ -5,9 +5,9 @@ export const TodoListApp = () => {
     <>
       <h1>Todo list app with router</h1>
       <p>
-        <Link to={`/exercices/todo-list-router/home`}>Home</Link>
+        <Link to={`home`}>Home</Link>
         <span> - </span>
-        <Link to={`/exercices/todo-list-router/app`}>Todolist</Link>
+        <Link to={`app`}>Todolist</Link>
       </p>
       <Outlet />
     </>

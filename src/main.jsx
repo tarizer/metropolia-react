@@ -46,75 +46,75 @@ const router = createBrowserRouter([
         element: <NotFound />,
       },
       {
-        path: "/",
+        path: "metropolia-react",
         element: <Home />,
       },
       {
-        path: "course/multiple-imput",
+        path: "metropolia-react/course/multiple-imput",
         element: <MultipleInput />,
       },
       {
-        path: "course/todo",
+        path: "metropolia-react/course/todo",
         element: <TodoList />,
       },
       {
-        path: "exercices/react-counter",
+        path: "metropolia-react/exercices/react-counter",
         element: <Counter />,
       },
       {
-        path: "exercices/conditional-rendering",
+        path: "metropolia-react/exercices/conditional-rendering",
         element: <Message message="Hello, world!" />,
       },
       {
-        path: "exercices/change-color",
+        path: "metropolia-react/exercices/change-color",
         element: <ChangeColor />,
       },
       {
-        path: "exercices/age-check",
+        path: "metropolia-react/exercices/age-check",
         element: <AgeCheck />,
       },
       {
-        path: "exercices/calculator",
+        path: "metropolia-react/exercices/calculator",
         element: <Calculator />,
       },
       {
-        path: "exercices/user-registration",
+        path: "metropolia-react/exercices/user-registration",
         element: <UserRegistration />,
       },
       {
-        path: "course/nasa",
+        path: "metropolia-react/course/nasa",
         element: <Nasa />,
       },
       {
-        path: "course/user-list",
+        path: "metropolia-react/course/user-list",
         element: <UserList />,
       },
       {
-        path: "course/user-info",
+        path: "metropolia-react/course/user-info",
         element: <UserInfo />,
       },
       {
-        path: "course/trivia",
+        path: "metropolia-react/course/trivia",
         element: <Trivia />,
       },
       {
-        path: "course/github",
+        path: "metropolia-react/course/github",
         element: <Github />,
       },
       {
-        path: "course/github-search",
+        path: "metropolia-react/course/github-search",
         element: <GithubSearch />,
       },
       {
-        path: "course/todogrid",
+        path: "metropolia-react/course/todogrid",
         element: <TodoGrid />,
       },
       {
-        path: "exercices/todogrid-enhanced",
+        path: "metropolia-react/exercices/todogrid-enhanced",
         element: <TodoGridEnhanced />,
       },
       {
-        path: "exercices/todo-list-router",
+        path: "metropolia-react/exercices/todo-list-router",
         element: <TodoListApp />,
         children: [
           {
@@ -128,23 +128,23 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "course/material-todo",
+        path: "metropolia-react/course/material-todo",
         element: <MaterialTodo />,
       },
       {
-        path: "exercices/material-todo-datagrid",
+        path: "metropolia-react/exercices/material-todo-datagrid",
         element: <MaterialTodoDataGrid />,
       },
       {
-        path: "course/firebase-todo",
+        path: "metropolia-react/course/firebase-todo",
         element: <FirebaseTodo />,
       },
       {
-        path: "exercices/bookstore",
+        path: "metropolia-react/exercices/bookstore",
         element: <Bookstore />,
       },
       {
-        path: "course/testing",
+        path: "metropolia-react/course/testing",
         element: <Testing />,
       },
     ],

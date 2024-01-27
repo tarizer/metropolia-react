@@ -5,12 +5,12 @@ export function Root() {
     <>
       <div id="sidebar">
         <h1>
-          <Link className="link" to={`/`}>
+          <Link className="link" to={`metropolia-react`}>
             React Fundamentals
           </Link>
         </h1>
         <div>
-          <Link className="link" to={`/`}>
+          <Link className="link" to={`metropolia-react`}>
             Metropolia
           </Link>
         </div>
@@ -20,15 +20,19 @@ export function Root() {
             <summary>4. Props & State</summary>
             <ul>
               <li>
-                <Link to={`/exercices/react-counter`}>Counter</Link>
+                <Link to={`metropolia-react/exercices/react-counter`}>
+                  Counter
+                </Link>
               </li>
               <li>
-                <Link to={`/exercices/conditional-rendering`}>
+                <Link to={`metropolia-react/exercices/conditional-rendering`}>
                   Conditional rendering
                 </Link>
               </li>
               <li>
-                <Link to={`/exercices/change-color`}>Change color</Link>
+                <Link to={`metropolia-react/exercices/change-color`}>
+                  Change color
+                </Link>
               </li>
             </ul>
           </details>
@@ -37,20 +41,26 @@ export function Root() {
             <summary>5. Reading User Input</summary>
             <ul>
               <li>
-                <Link to={`/course/multiple-imput`}>Multiple imput</Link>
+                <Link to={`metropolia-react/course/multiple-imput`}>
+                  Multiple imput
+                </Link>
               </li>
               <li>
-                <Link to={`/course/todo`}>Todo list</Link>
+                <Link to={`metropolia-react/course/todo`}>Todo list</Link>
               </li>
 
               <li>
-                <Link to={`/exercices/age-check`}>Age check</Link>
+                <Link to={`metropolia-react/exercices/age-check`}>
+                  Age check
+                </Link>
               </li>
               <li>
-                <Link to={`/exercices/calculator`}>Calculator</Link>
+                <Link to={`metropolia-react/exercices/calculator`}>
+                  Calculator
+                </Link>
               </li>
               <li>
-                <Link to={`/exercices/user-registration`}>
+                <Link to={`metropolia-react/exercices/user-registration`}>
                   User registration
                 </Link>
               </li>
@@ -61,22 +71,24 @@ export function Root() {
             <summary>6. Networking</summary>
             <ul>
               <li>
-                <Link to={`/course/nasa`}>Nasa APOD</Link>
+                <Link to={`metropolia-react/course/nasa`}>Nasa APOD</Link>
               </li>
               <li>
-                <Link to={`/course/user-list`}>User List</Link>
+                <Link to={`metropolia-react/course/user-list`}>User List</Link>
               </li>
               <li>
-                <Link to={`/course/user-info`}>User Info</Link>
+                <Link to={`metropolia-react/course/user-info`}>User Info</Link>
               </li>
               <li>
-                <Link to={`/course/trivia`}>Trivia</Link>
+                <Link to={`metropolia-react/course/trivia`}>Trivia</Link>
               </li>
               <li>
-                <Link to={`/course/github`}>Github React Repositories</Link>
+                <Link to={`metropolia-react/course/github`}>
+                  Github React Repositories
+                </Link>
               </li>
               <li>
-                <Link to={`/course/github-search`}>
+                <Link to={`metropolia-react/course/github-search`}>
                   Search Github Repositories
                 </Link>
               </li>
@@ -87,10 +99,10 @@ export function Root() {
             <summary>7. 3rd Party Components</summary>
             <ul>
               <li>
-                <Link to={`/course/todogrid`}>Todo Grid</Link>
+                <Link to={`metropolia-react/course/todogrid`}>Todo Grid</Link>
               </li>
               <li>
-                <Link to={`/exercices/todogrid-enhanced`}>
+                <Link to={`metropolia-react/exercices/todogrid-enhanced`}>
                   Todo Grid Enhanced
                 </Link>
               </li>
@@ -101,7 +113,9 @@ export function Root() {
             <summary>8. React Router</summary>
             <ul>
               <li>
-                <Link to={`/exercices/todo-list-router`}>Todo List Router</Link>
+                <Link to={`metropolia-react/exercices/todo-list-router`}>
+                  Todo List Router
+                </Link>
               </li>
             </ul>
           </details>
@@ -110,10 +124,12 @@ export function Root() {
             <summary>9. Material UI</summary>
             <ul>
               <li>
-                <Link to={`/course/material-todo`}>Material Todolist</Link>
+                <Link to={`metropolia-react/course/material-todo`}>
+                  Material Todolist
+                </Link>
               </li>
               <li>
-                <Link to={`/exercices/material-todo-datagrid`}>
+                <Link to={`metropolia-react/exercices/material-todo-datagrid`}>
                   Material Todolist (DataGrid)
                 </Link>
               </li>
@@ -124,10 +140,14 @@ export function Root() {
             <summary>10. React & Firebase</summary>
             <ul>
               <li>
-                <Link to={`/course/firebase-todo`}>Firebase Todolist</Link>
+                <Link to={`metropolia-react/course/firebase-todo`}>
+                  Firebase Todolist
+                </Link>
               </li>
               <li>
-                <Link to={`/exercices/bookstore`}>Firebase Bookstore</Link>
+                <Link to={`metropolia-react/exercices/bookstore`}>
+                  Firebase Bookstore
+                </Link>
               </li>
             </ul>
           </details>
@@ -136,7 +156,7 @@ export function Root() {
             <summary>11. Testing & Deployment</summary>
             <ul>
               <li>
-                <Link to={`/course/testing`}>Testing</Link>
+                <Link to={`metropolia-react/course/testing`}>Testing</Link>
               </li>
             </ul>
           </details>
