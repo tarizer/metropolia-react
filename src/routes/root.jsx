@@ -156,7 +156,14 @@ export function Root() {
             <summary>11. Testing & Deployment</summary>
             <ul>
               <li>
-                <Link to={`metropolia-react/course/testing`}>Testing</Link>
+                <Link to={`metropolia-react/course/testing`}>
+                  Todolist Testing
+                </Link>
+              </li>
+              <li>
+                <Link to={`metropolia-react/exercices/todolist-remove`}>
+                  Todolist With Remove
+                </Link>
               </li>
             </ul>
           </details>
