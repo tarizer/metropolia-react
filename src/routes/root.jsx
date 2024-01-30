@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import metropoliaLogo from "../assets/metropolia-logo.png";
 
 export function Root() {
   return (
@@ -10,8 +11,16 @@ export function Root() {
           </Link>
         </h1>
         <div>
-          <Link className="link" to={`metropolia-react`}>
-            Metropolia
+          <Link
+            className="link"
+            to="https://www.metropolia.fi/en"
+            target="_blank"
+            style={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <img src={metropoliaLogo} alt="Metropolia Logo" width="70%" />
           </Link>
         </div>
 
